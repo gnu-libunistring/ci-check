@@ -31,7 +31,8 @@ for prereq in $prerequisites; do
   tar xfz $prereq.tar.gz
   cd $prereq
   # --disable-shared avoids problem 1) with rpath on ELF systems, 2) with DLLs on Windows.
-  ./configure $configure_options --disable-shared --prefix="$prefix" > log1 2>&1; rc=$?; cat log1; test $rc = 0 || exit 1
+  # But it forces static linking of libunistring and thus leads to bigger test programs.
+  ./configure $configure_options --prefix="$prefix" > log1 2>&1; rc=$?; cat log1; test $rc = 0 || exit 1
   $make > log2 2>&1; rc=$?; cat log2; test $rc = 0 || exit 1
   $make install > log4 2>&1; rc=$?; cat log4; test $rc = 0 || exit 1
   cd ..
