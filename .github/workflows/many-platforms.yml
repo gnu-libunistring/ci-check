@@ -225,7 +225,7 @@ jobs:
       - run: pwd
       # Install Homebrew packages.
       # List of packages: https://formulae.brew.sh/
-      # - run: brew install ...
+      - run: ${{ matrix.os == 'macos-14' && 'brew install libiconv' || ':' }}
       - run: |
           pwd
           export CPPFLAGS="-Wall"
