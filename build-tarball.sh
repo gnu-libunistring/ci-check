@@ -29,7 +29,7 @@ cd "$package"
 ./autopull.sh --one-time
 
 # Fetch extra files and generate files (uses packages wget, python3, automake, autoconf, m4).
-date=`date --utc --iso-8601 | sed -e 's/-//g'`; sed -i -e "/AM_INIT_AUTOMAKE/s/\\([0-9][0-9.]*\\)/\\1-${date}/" configure.ac
+date=`date --utc --iso-8601 | sed -e 's/-//g'`; sed -i -e "/VERSION_NUMBER=/s/\\([0-9][0-9.]*\\)/\\1-${date}/" version.sh
 ./autogen.sh
 
 # Configure (uses package 'file').
