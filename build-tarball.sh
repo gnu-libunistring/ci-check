@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright (C) 2024 Free Software Foundation, Inc.
+# Copyright (C) 2024-2025 Free Software Foundation, Inc.
 #
 # This file is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published
@@ -27,6 +27,9 @@ set -e
 git clone --depth 1 https://git.savannah.gnu.org/git/"$package".git
 cd "$package"
 ./autopull.sh --one-time
+
+# Apply patches.
+patch -p1 < ../patches/ubsan.diff
 
 # Fetch extra files and generate files (uses packages wget, python3, automake, autoconf, m4).
 date=`date --utc --iso-8601 | sed -e 's/-//g'`; sed -i -e "/VERSION_NUMBER=/s/\\([0-9][0-9.]*\\)/\\1-${date}/" version.sh

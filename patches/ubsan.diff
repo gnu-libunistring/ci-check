@@ -1,0 +1,62 @@
+diff --git a/autogen.sh b/autogen.sh
+index fb34263..6751e28 100755
+--- a/autogen.sh
++++ b/autogen.sh
+@@ -447,6 +447,57 @@ if test $skip_gnulib = false; then
+   '
+   $GNULIB_TOOL --lib=libunistring --source-base=lib --m4-base=gnulib-m4 --tests-base=tests \
+     --with-tests --lgpl=3orGPLv2 --makefile-name=Makefile.gnulib --libtool --local-dir=gnulib-local \
++    --avoid=memchr-tests \
++    --avoid=strncat-tests \
++    --avoid=unicase/u8-casecmp-tests \
++    --avoid=unicase/u8-casecoll-tests \
++    --avoid=unicase/u8-casefold-tests \
++    --avoid=unicase/u8-tolower-tests \
++    --avoid=unicase/u8-totitle-tests \
++    --avoid=unicase/u8-toupper-tests \
++    --avoid=unicase/u16-casecmp-tests \
++    --avoid=unicase/u16-casecoll-tests \
++    --avoid=unicase/u16-casefold-tests \
++    --avoid=unicase/u16-tolower-tests \
++    --avoid=unicase/u16-totitle-tests \
++    --avoid=unicase/u16-toupper-tests \
++    --avoid=unicase/u32-casecmp-tests \
++    --avoid=unicase/u32-casecoll-tests \
++    --avoid=unicase/u32-casefold-tests \
++    --avoid=unicase/u32-tolower-tests \
++    --avoid=unicase/u32-totitle-tests \
++    --avoid=unicase/u32-toupper-tests \
++    --avoid=unilbrk/u8-width-linebreaks-tests \
++    --avoid=unilbrk/u16-width-linebreaks-tests \
++    --avoid=unilbrk/u32-width-linebreaks-tests \
++    --avoid=uninorm/nfc-tests \
++    --avoid=uninorm/nfd-tests \
++    --avoid=uninorm/nfkc-tests \
++    --avoid=uninorm/nfkd-tests \
++    --avoid=uninorm/u8-normcmp-tests \
++    --avoid=uninorm/u8-normcoll-tests \
++    --avoid=uninorm/u16-normcmp-tests \
++    --avoid=uninorm/u16-normcoll-tests \
++    --avoid=uninorm/u32-normcmp-tests \
++    --avoid=uninorm/u32-normcoll-tests \
++    --avoid=unistdio/u8-vasnprintf-tests \
++    --avoid=unistdio/u8-vasprintf-tests \
++    --avoid=unistdio/u16-vasnprintf-tests \
++    --avoid=unistdio/u16-vasprintf-tests \
++    --avoid=unistdio/u32-vasnprintf-tests \
++    --avoid=unistdio/u32-vasprintf-tests \
++    --avoid=unistdio/ulc-vasnprintf-tests \
++    --avoid=unistdio/ulc-vasprintf-tests \
++    --avoid=unistr/u8-chr-tests \
++    --avoid=unistr/u8-strchr-tests \
++    --avoid=unistr/u8-to-u16-tests \
++    --avoid=unistr/u8-to-u32-tests \
++    --avoid=unistr/u16-chr-tests \
++    --avoid=unistr/u16-strchr-tests \
++    --avoid=unistr/u16-to-u32-tests \
++    --avoid=unistr/u16-to-u8-tests \
++    --avoid=unistr/u32-to-u16-tests \
++    --avoid=unistr/u32-to-u8-tests \
+     --import $GNULIB_MODULES
+   # Change lib/unistr.h to be usable standalone.
+   sed -e 's/if GNULIB_[A-Za-z0-9_]* || .*/if 1/g' \
