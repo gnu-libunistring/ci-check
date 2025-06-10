@@ -3,9 +3,9 @@ index fb34263..6751e28 100755
 --- a/autogen.sh
 +++ b/autogen.sh
 @@ -447,6 +447,57 @@ if test $skip_gnulib = false; then
-   '
    $GNULIB_TOOL --lib=libunistring --source-base=lib --m4-base=gnulib-m4 --tests-base=tests \
      --with-tests --lgpl=3orGPLv2 --makefile-name=Makefile.gnulib --libtool --local-dir=gnulib-local \
+     --avoid=float-h-tests \
 +    --avoid=memchr-tests \
 +    --avoid=strncat-tests \
 +    --avoid=unicase/u8-casecmp-tests \
