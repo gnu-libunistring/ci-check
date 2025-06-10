@@ -121,12 +121,12 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
             ${{ env.package }}-*/build-full/config.cache
             ${{ env.package }}-*/build-full/config.log
             ${{ env.package }}-*/build-full/config.status
-            ${{ env.package }}-*/build-full/log[123]
+            ${{ env.package }}-*/build-full/log[12345]
             ${{ env.package }}-*/build-full/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -170,12 +170,12 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
             ${{ env.package }}-*/build-full/config.cache
             ${{ env.package }}-*/build-full/config.log
             ${{ env.package }}-*/build-full/config.status
-            ${{ env.package }}-*/build-full/log[123]
+            ${{ env.package }}-*/build-full/log[12345]
             ${{ env.package }}-*/build-full/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -221,12 +221,12 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
             ${{ env.package }}-*/build-full/config.cache
             ${{ env.package }}-*/build-full/config.log
             ${{ env.package }}-*/build-full/config.status
-            ${{ env.package }}-*/build-full/log[123]
+            ${{ env.package }}-*/build-full/log[12345]
             ${{ env.package }}-*/build-full/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -268,12 +268,12 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
             ${{ env.package }}-*/build-full/config.cache
             ${{ env.package }}-*/build-full/config.log
             ${{ env.package }}-*/build-full/config.status
-            ${{ env.package }}-*/build-full/log[123]
+            ${{ env.package }}-*/build-full/log[12345]
             ${{ env.package }}-*/build-full/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -316,7 +316,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -363,7 +363,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -411,7 +411,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -461,7 +461,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -509,12 +509,12 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
             ${{ env.package }}-*/build-full/config.cache
             ${{ env.package }}-*/build-full/config.log
             ${{ env.package }}-*/build-full/config.status
-            ${{ env.package }}-*/build-full/log[123]
+            ${{ env.package }}-*/build-full/log[12345]
             ${{ env.package }}-*/build-full/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -560,12 +560,12 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
             ${{ env.package }}-*/build-full/config.cache
             ${{ env.package }}-*/build-full/config.log
             ${{ env.package }}-*/build-full/config.status
-            ${{ env.package }}-*/build-full/log[123]
+            ${{ env.package }}-*/build-full/log[12345]
             ${{ env.package }}-*/build-full/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -627,7 +627,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -693,7 +693,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -795,7 +795,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -836,7 +836,7 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
           retention-days: 7
           overwrite: true
@@ -882,12 +882,12 @@ jobs:
             ${{ env.package }}-*/build/config.cache
             ${{ env.package }}-*/build/config.log
             ${{ env.package }}-*/build/config.status
-            ${{ env.package }}-*/build/log[123]
+            ${{ env.package }}-*/build/log[12345]
             ${{ env.package }}-*/build/tests/test-suite.log
             ${{ env.package }}-*/build-full/config.cache
             ${{ env.package }}-*/build-full/config.log
             ${{ env.package }}-*/build-full/config.status
-            ${{ env.package }}-*/build-full/log[123]
+            ${{ env.package }}-*/build-full/log[12345]
             ${{ env.package }}-*/build-full/tests/test-suite.log
           retention-days: 7
           overwrite: true
