@@ -57,6 +57,6 @@ index fb34263..6751e28 100755
 +    --avoid=unistr/u16-to-u8-tests \
 +    --avoid=unistr/u32-to-u16-tests \
 +    --avoid=unistr/u32-to-u8-tests \
-     --import $GNULIB_MODULES
+     --import $GNULIB_MODULES || exit $?
    # Change lib/unistr.h to be usable standalone.
    sed -e 's/if GNULIB_[A-Za-z0-9_]* || .*/if 1/g' \
